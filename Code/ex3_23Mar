@@ -1,0 +1,8 @@
+(set-option:produce-models true)
+
+(define-fun getXAxisIntersection ((ax Real) (ay Real) (bx Real) (by Real)) Real
+    (+ ay (* (- ax) (/ (- by ay) (- bx ax))))
+)
+
+(define-const A Int)
+

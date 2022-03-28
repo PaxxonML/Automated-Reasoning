@@ -1,0 +1,4 @@
+()
+(define-fun maxFromArray (array Array) Array 
+    (ITE )
+)

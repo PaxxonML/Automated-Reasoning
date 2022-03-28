@@ -1,0 +1,22 @@
+(set-option:produce-models true)
+(declare-const A Int)
+(declare-const B Int)
+(declare-const C Int)
+(declare-const D Int)
+
+(assert (= D (+ A C)))
+(assert (= C (* A B)))
+(assert (= B (- C B)))
+(assert (= D (* A 4)))
+
+(assert (and (> A -1) (< A 10)))
+(assert (and (> B -1) (< B 10)))
+(assert (and (> C -1) (< C 10)))
+(assert (and (> D -1) (< D 10)))
+
+(assert (disctinct A B C D))
+
+(check-sat)
+(get-model)
+
+(exit)
